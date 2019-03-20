@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import Estabelecimento
-from .models import Cliente
+from .models import Estabelecimento, Marca, Tipo, Produto, Cesta, ItemCesta
 
-admin.site.register(Cliente)
 admin.site.register(Estabelecimento)
-# Register your models here.
+admin.site.register(Marca)
+admin.site.register(Tipo)
+admin.site.register(Produto)
+admin.site.register(Cesta)
+admin.site.register(ItemCesta)
