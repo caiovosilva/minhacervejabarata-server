@@ -16,7 +16,6 @@ class Marca(models.Model):
 class Tipo(models.Model):
     descricao = models.CharField(max_length=50)
     ml = models.FloatField(null=False)
-    qtdEmbalagem = models.IntegerField()
 
     def __str__(self):
         return self.descricao
