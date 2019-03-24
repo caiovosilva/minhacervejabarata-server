@@ -14,7 +14,7 @@ class MarcaSerializer(serializers.ModelSerializer):
 class TipoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tipo
-        fields = ('id', 'descricao', 'ml', 'qtdEmbalagem')
+        fields = ('id', 'descricao', 'ml')
 
 class ProdutoSerializer(serializers.ModelSerializer):
     estabelecimento = serializers.RelatedField(source='estabelecimento', read_only=True)
